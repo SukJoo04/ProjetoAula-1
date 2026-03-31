@@ -80,3 +80,18 @@ console.log(valor1 == valor2);
 console.log(valor1 === valor2);
 
 console.log("O valor é: ", valor2);
+
+// EXERCÍCIOS
+// 1) Utilizando as variáveis p (preço do produto) e v (valor do desconto, crie uma nova variável chamada preçoFinal que subtraia o desconto do preço e exiba o resultado)
+const p= 20
+const v= 10
+const precoFinal = p - v
+console.log("O preço final com desconto é:", precoFinal)
+
+// 2) Verificação de Segurança (Login e Token) No banco, para autorizar uma transação, precisamos que o usuário esteja logado e que o token de segurança seja válido.
+const usuarioLogado = 1;
+const token = 100;
+const transacãoAutorizada === 1 && token >= 10;
+console.log("Transação Autorizada com sucesso", transaçãoAutorizada;
+
+    
