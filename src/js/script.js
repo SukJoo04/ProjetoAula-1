@@ -83,15 +83,78 @@ console.log("O valor é: ", valor2);
 
 // EXERCÍCIOS
 // 1) Utilizando as variáveis p (preço do produto) e v (valor do desconto, crie uma nova variável chamada preçoFinal que subtraia o desconto do preço e exiba o resultado)
-const p= 20
-const v= 10
+const p = 20
+const v = 10
 const precoFinal = p - v
 console.log("O preço final com desconto é:", precoFinal)
 
 // 2) Verificação de Segurança (Login e Token) No banco, para autorizar uma transação, precisamos que o usuário esteja logado e que o token de segurança seja válido.
 const usuarioLogado = 1;
 const token = 100;
-const transacãoAutorizada === 1 && token >= 10;
-console.log("Transação Autorizada com sucesso", transaçãoAutorizada;
+const transacãoAutorizada = 1 && token >= 10;
+console.log("Transação Autorizada com sucesso", transaçãoAutorizada);
 
-    
+// ESTRUTURA CONDICIONAL
+
+if(true){
+    console.log("é Verdadeiro")
+}
+
+// if/else
+
+let nome="Fiap"
+
+if(nome=="Fiap")
+{
+    console.log("nome Errado") 
+}
+
+// if encadeado ou aninhado
+
+let idade = 17;
+if(idade <= 13){
+    console.log("é uma criança")
+} else if (idade >13 && idade <=18){
+    console.log("é um adolecente")
+} else if (idade >18 && idade <=59)
+    console.log("é um adulto")
+else {
+    console.log("é um idoso")
+}
+
+// SWITCH CASE
+
+let times="santos";
+
+switch(times){
+    case "santos":
+        console.log("Um time idoso")
+        break;
+    case "sao paulo":
+        console.log("Time Panetone")
+        break;
+    case "palmeiras":
+        console.log("O MELHOR APENAS")
+        break
+    case "corinthians":
+        console.log("Time de antas")
+        break
+    default:
+        console.log("é tão ruim quanto a selação brasileira")
+}
+
+// TERNARIA
+
+let salario = 100;
+let resultado = salario == 100 ? "Salario Certo":"Salario Errado"
+console.log(resultado)
+
+let usuario = "fiap";
+let userLogado = usuario === "fiap"?"Logado com sucesso":"usuario inválido"
+console.log(userLogado);
+
+function verificarParImpar(numero){
+    return numero % 2 === 0 ? "Par":"Impar";
+}
+
+console.log(verificarParImpar(10))
