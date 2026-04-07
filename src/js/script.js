@@ -164,6 +164,73 @@ console.log(nome)
 // for - Estrutura de repetição utilizada quando sabemos previamente quantas vezes o código vai ser executado
 
 // declaração, operação, incremento
-for(let i=1; i<=5; i++);{
-    console.log("Numero:",i)
+for(let i=1; i<=5; i++){
+    console.log("Numero:",i);
 }
+// for para array
+
+const linguagens = ["Java","Python","C#","PHP"];
+
+for(let i=0; i < linguagens.length;i++){
+    console.log("Linguagem", i, ":", linguagens[i]);
+}
+
+const tecnologias =["JS","HTML","CSS"]
+
+for(const tech of tecnologias){
+    console.log("Estudando",tech)
+}
+
+const carros ={marca:"Volks",modelo:"Fusca",ano:1980};
+
+for( let dados in carros){
+    console.log(dados,":",carros,[dados])
+}
+
+//while - diferente do for o while não sabemos a quantidade de vezes que o código vai executar
+
+// let i=1;
+
+// while(i <=5){
+//     console.log("contagem",i)
+//     i++;
+// }
+
+// // declaração de variável indefinida
+// let numero;
+
+// while(numero !== "0"){
+//     numero = prompt("Digite um numero( ou 0 pra sair)");
+//     console.log("eu sei o que você digitou:", numero);
+// }
+// console.log("Fim do Programa")
+
+// do while (Executa ao menos uma vez)
+let contador =10;
+do {
+    console.log("vai executar pelo menos uma vez")
+    contador++
+}while (contador <=5);
+
+// declaração da cariavel undefined
+let palpite;
+
+// gerar um numero aleatorio entre 1 e 10
+const sorteio =Math.floor(Math.random() * 10)+1;
+
+do{
+    palpite = parseInt(prompt("Digite um numero entre 1 e 10"))
+
+    if(isNawl(palpite))
+        alert("saindo do jogo") 
+    break;
+}
+
+    if(palpite !== sorteio){
+    alert("Você perdeu R$ 100,00")
+}               
+
+while(palpite == sorteio)
+    if(palpite === sorteio){
+        alert("Parabéns, você acertou e ganhou R$ 100,00")
+    }
